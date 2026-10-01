@@ -1,2 +1,2 @@
-# sw-for-cyrus-book-on-adpt-design
-Repo storing useful resources accompanying Cyrus Mehta's book on Adaptive Designs
+# Software accompanying Cyrus Mehta's textbook on Adaptive Designs
+Repo storing useful resources accompanying Cyrus Mehta's textbook on Adaptive Designs
