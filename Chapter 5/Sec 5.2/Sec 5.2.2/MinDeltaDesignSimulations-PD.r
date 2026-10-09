@@ -11,7 +11,7 @@ tryCatch(
   suppressWarnings(source(file.path("tools", "helper.R"), local = .GlobalEnv)),
   error = function(first.error) {
     source(
-      file.path("..", "..", "tools", "helper.R"),
+      file.path("..", "..", "..", "tools", "helper.R"),
       local = .GlobalEnv
     )
   }
@@ -20,7 +20,7 @@ tryCatch(
 # Setting up the base directory for executing this code
 base.dir <- get.base.dir(
   cur.dir = getwd(),
-  sec.dir = "Chapter 5/Sec 5.2.2/"
+  sec.dir = "Chapter 5/Sec 5.2/Sec 5.2.2/"
 )
 
 # root <- getwd()
@@ -139,7 +139,7 @@ Samp.Size.Zone <- c(mean(fut$Sample.Size),
 results <- data.frame(Zone.Ind, Prob.Zone, Power.Zone, Samp.Size.Zone,
                       delta.true, sigma, n1, n2, nmax)
 
-results
+print(results)
 
 #Combine futility and unfavorable zones. And combine favorable and efficacy zones.
 # ---- Additional combined zone summaries ----
@@ -173,7 +173,7 @@ results.comb <- data.frame(Zone.Ind = Zone.Ind.comb,
                            Samp.Size.Zone = Samp.Size.Zone.comb,
                            delta.true, sigma, n1, n2, nmax)
 
-results.comb
+print(results.comb)
 
 
 end_time <- Sys.time()

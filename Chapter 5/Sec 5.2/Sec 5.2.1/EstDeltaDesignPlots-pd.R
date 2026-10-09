@@ -32,7 +32,7 @@ tryCatch(
   source(file.path("tools", "helper.R"), local = .GlobalEnv),
   error = function(first.error) {
     source(
-      file.path("..", "..", "tools", "helper.R"),
+      file.path("..", "..", "..", "tools", "helper.R"),
       local = .GlobalEnv
     )
   }
@@ -41,7 +41,7 @@ tryCatch(
 # Setting up the base directory for executing this code
 base.dir <- get.base.dir(
   cur.dir = getwd(),
-  sec.dir = "Chapter 5/Sec 5.2.1/"
+  sec.dir = "Chapter 5/Sec 5.2/Sec 5.2.1/"
 )
 
 # root <- getwd()
