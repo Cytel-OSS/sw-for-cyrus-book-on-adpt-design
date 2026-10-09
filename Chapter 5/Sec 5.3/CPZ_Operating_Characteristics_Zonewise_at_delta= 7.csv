@@ -1,0 +1,5 @@
+"Min_CP_PP","Max_CP_PP","True_delta","Zone","Prob_Zonewise_CPZ","Average_SS_Zonewise_CPZ","Power_Zonewise_CPZ"
+0.8,0.9,7,"Favorable + Efficacy",20.103,132.63517882903,96.2144953489529
+0.8,0.9,7,"Futility+Unfavorable",21.666,168.093325948491,20.2206221729899
+0.8,0.9,7,"Promising",58.231,273.928840994697,89.0247462691693
+0.8,0.9,7,"All Trials",100,222.594253399622,75.563

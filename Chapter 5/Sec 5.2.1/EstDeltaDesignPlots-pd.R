@@ -1,3 +1,5 @@
+# CODE FOR FIG 5.1
+
 ########EastDeltaDesignPlots.R for the PD design#############
 # The sole purpose of this code is to plot the Sample Size function and the 
 # Conditional Power function of any adaptive SSR trial created in East by 
@@ -25,7 +27,7 @@ library(latex2exp)
 library(gridExtra)
 
 ## Paths and directories
-# Setting up the base directory for executing this code
+# Sourcing the helper functions from the tools directory
 tryCatch(
   source(file.path("tools", "helper.R"), local = .GlobalEnv),
   error = function(first.error) {
@@ -36,6 +38,7 @@ tryCatch(
   }
 )
 
+# Setting up the base directory for executing this code
 base.dir <- get.base.dir(
   cur.dir = getwd(),
   sec.dir = "Chapter 5/Sec 5.2.1/"
