@@ -113,14 +113,14 @@ cpmax <- ppmax <- 0.9
 #delta.vec <- seq(0, 10, 1)
 delta.vec <- seq(7, 10, 1)
 delta.min <-7
-n.sim <- 100000
+n.sim <- 1000 # 100000 # Change to 100000 for final runs
 
 # parameters for prior density of delta
 sigma <- 20
 delta.l <-  (delta.min) - c(1, 7, 6*sigma) #c(1, 3, 5, 7, sigma, 3*sigma, 6*sigma) #delta.min - c(1, 3, 5, 7, sigma, 3*sigma, 6*sigma) 
 delta.u <-  (delta.min) + c(1, 7, 6*sigma) #c(1, 3, 5, 7, sigma, 3*sigma, 6*sigma) #delta.min + c(1, 3, 5, 7, sigma, 3*sigma, 6*sigma)
 
-tails <- 0.0001
+tails <- 0.45 # 0.0001
 s0 <- rep(0, length(delta.l))
 m0 <- rep(0, length(delta.l))
 lb <- rep(0, length(delta.l))
